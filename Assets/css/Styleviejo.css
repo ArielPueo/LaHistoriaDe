@@ -1,0 +1,153 @@
+/*Definición de tipografías*/
+
+*{
+    
+    font-family: 'Montserrat', sans-serif ;
+    
+    
+}
+
+
+
+h2{
+    font-family: 'Bebas Neue', cursive;
+}
+h4{
+    font-family: 'Rokkitt', serif;
+}
+h6{
+    font-family: 'Rokkitt', serif;
+}
+
+/*se definen las tipografías que tienen vinculos*/
+
+.linkTextType   {
+    font-family: 'Bebas Neue', cursive;
+    color: #efe6d8;
+}
+
+/*Construcción del header*/
+
+header {
+
+    background-color: #0d1011;
+    display: flex;
+    
+}
+
+header a {
+    margin: auto;
+    
+}
+
+header img {
+
+    margin-left: 25px;
+}
+
+/*construcción del navegador el 
+cuál contiene usuario, contraseña, 
+y los link a todas las páginas*/
+nav {
+    
+    text-align: left;
+    background-color: #43b5a0;
+    width: 100%;
+    height: 65px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+nav ul   {
+
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-right: 25px;
+    padding-top: 10px;
+
+}
+
+/*definición del margin del H1*/
+
+.textBienvenida {
+
+    margin-left: 25px;
+}
+
+/*construcción del body el cuál contiene un main que a su vez tiene una una sección con articulos */
+body main{
+
+    background-color: #43b5a0;
+    width: auto;
+    height: 500px;
+    margin: 25px;
+    padding: 25px;
+    border: 2px solid black;
+}
+
+
+
+body {
+
+    background-color: #efe6d8;
+}
+
+
+
+
+/*la clase articleMain define características del los articulos que componen la section del main*/
+
+.articleMain{
+
+    background-color: #fec859;
+   
+    
+}
+
+/*la clase sectionMain define características de la sección del main*/
+
+.sectionMain{
+
+    display: inline-block;
+    margin: 50px;
+    text-align: center;
+}
+
+/*la clase textWeight define características del ancho de la tipografía montserrat a la cual se la ensancha con el atributo
+ bold lo cual fue necesario debido al bajo contraste generado por el trazo fino de la configuración por defecto de dicha tipografía*/
+.textWeight{
+
+    font-weight: bold;
+}
+
+
+
+footer{
+    
+    display: flex;
+    background-color: #0d1011;
+}
+
+footer p {
+    font-weight: bold;
+    margin-left: 15px;
+    color: white;
+    text-align: left;    
+}
+
+footer section {
+    
+    margin:auto; 
+}
+
+
+/*la clase "imgFormato" define la forma de las imagenes de las paginas "lahistoriadeleo" y de "que es la historia"*/
+
+.imgFormato {
+
+    border-radius: 100%;
+    margin: 25px;
+    width: 350px;
+    height: 350px;
+}

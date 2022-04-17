@@ -1,0 +1,81 @@
+/*Definición de tipografías*/
+* {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif ;
+    font-weight: bold;
+}
+
+h1 h2 h3{
+    font-family: 'Bebas Neue', cursive;
+}
+h4 h5 h6 {
+    font-family: 'Rokkitt', serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(7, auto);
+    padding: 30px;
+    grid-column-gap: 20px;    
+    background-color: #efe6d8;
+}
+
+/*.containerItems{
+    
+    grid-column-start: span 3;
+    padding: 15px;
+    
+    
+    
+    
+}
+
+.containerItems:nth-child(2){
+    display: flex;
+    width: 100% auto;
+}
+
+.containerItems:nth-child(3){
+    display: flex;
+    width: 100%;
+}
+.containerText {
+    
+    
+    
+}*/
+nav {
+    background-color: #43b5a0;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    grid-column-start: 1 ;
+    grid-column-end: 4;
+}
+nav ul li {
+    margin-top:5px;
+    list-style: none;
+    display: flex;
+    justify-content: ;
+}
+
+header {
+    background-color: #0d1011;
+    grid-column-start: 1 ;
+    grid-column-end: 4;
+}
+
+
+
+
+
+footer{
+    background-color: #0d1011;
+    color: #efe6d8;
+    margin-top: 5px;
+    padding: 15px;
+    grid-column-start: 1 ;
+    grid-column-end: 4;
+}
+

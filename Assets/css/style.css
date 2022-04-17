@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #efe6d8;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+
+    grid-template-areas: "header header header"
+                        "contenido contenido sidebar"
+                        "widget-1 widget-2 sidebar"
+                        "footer footer footer"
+    ;
+}
+
+.container >div,
+.container .containerHeader,
+.container .containerContenido,
+.container .containerSideBar,
+.container .containerFooter{
+    background-color: #43b5a0;
+    padding: 20px;
+    border-radius: 2px;
+
+}
+
+.container .containerHeader {
+    background-color: #0d1011;
+    color: #43b5a0;
+    grid-area: header;
+    /*grid-column-start: 1;
+    grid-column-end: 4;*/
+}
+
+.container .containerContenido {
+    
+    grid-area: contenido;
+    /*grid-column: span 2;*/
+}
+
+.container .containerSideBar {
+    grid-column: 3 / 4;
+    background-color: #fec859;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    grid-area: sidebar;
+    
+
+    /*grid-row: 2 / 4 ;*/
+}
+
+.container .containerSideBar ul {
+    list-style: none;
+    
+    
+}
+
+.container .containerWidget1,
+.container .containerWidget2 {
+
+    background-color: #fa448c;
+    color: #efe6d8;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container .containerWidget1{
+    grid-area: widget-1;
+}
+.container .containerWidget2{
+    grid-area: widget-2;
+}
+
+.container .containerFooter{
+    background-color: #0d1011;
+    color: #efe6d8;
+    grid-area: footer;
+    /*grid-column: span 3;*/
+}
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        grid-template-areas: "header header header"
+                            "sidebar sidebar sidebar"
+                            "contenido contenido contenido"
+                            "widget-1 widget-1 widget-2"
+                            "footer footer footer"
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: "header header"
+                            "sidebar sidebar"
+                            "contenido contenido "
+                            "widget-1  widget-1"
+                            "widget-2 widget-2"
+                            "footer footer "
+    }
+    
+}

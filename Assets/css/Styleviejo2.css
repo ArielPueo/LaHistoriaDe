@@ -1,0 +1,209 @@
+/*reseteo y definición de la fuente prioritaria*/
+* {
+    padding: 0;
+    margin: 5px;
+    font-family: 'Montserrat', sans-serif ;
+}
+
+/*definición de tipografías de títulos y subtítulos*/
+
+
+h1 h2 h3{
+    font-family: 'Bebas Neue', cursive;
+}
+h4 h5 h6{
+    font-family: 'Rokkitt', serif;
+}
+
+
+/*definición de las tipografías que tienen vinculos*/
+
+.linkTextType   {
+    font-family: 'Bebas Neue', cursive;
+    color: #efe6d8;
+}
+
+/*definición del margin del h1 que contiene el texto "Bienvenido"*/
+
+.textBienvenida {
+
+    margin-left: 25px;
+}
+
+.wrapper {
+    flex-direction: column;
+    min-width: 100vh;
+}
+/*Construcción del header*/
+
+header {
+
+    background-color: #0d1011;
+    display: grid;
+    width: 100%;
+    
+}
+
+header a {
+    margin: auto;
+    
+}
+
+header img {
+
+    margin-left: 25px;
+}
+
+
+/*construcción del navegador el 
+cuál contiene usuario, contraseña, 
+y los link a todas las páginas*/
+nav {
+    display: flex;
+    text-align: left;
+    background-color: #43b5a0;
+    width: 100%;
+    height: 65px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+nav ul   {
+
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-right: 25px;
+    padding-top: 10px;
+
+}
+
+/*construcción del body el cuál contiene un main que a su vez tiene una una sección con articulos */
+body main{
+    display: flex;
+    background-color: #43b5a0;
+    /*width: auto;
+    height: 500px;
+    margin: 25px;
+    padding: 25px;*/
+    width: 95%;
+    border: 2px solid black;
+    flex-wrap: wrap;
+}
+
+
+
+body {
+    display: grid;
+    background-color: #efe6d8;
+}
+
+
+
+
+/*la clase articleMain define características del 
+los articulos que componen la section del main*/
+
+.articleMain{
+    display: flex;
+    background-color: #fec859;
+
+   
+    
+}
+
+/*la clase sectionMain define características de la 
+sección del main*/
+
+.sectionMain{
+
+    display: flex;
+    margin: 50px;
+    text-align: center;
+    width: 33%;
+}
+
+/*la clase textWeight define características del ancho
+ de la tipografía montserrat a la cual se la ensancha con
+ el atributo bold lo cual fue necesario debido al bajo 
+ contraste generado por el trazo fino de la configuración
+ por defecto de dicha tipografía*/
+.textWeight{
+
+    font-weight: bold;
+}
+
+
+
+footer{
+    
+    display: flex;
+    background-color: #0d1011;
+    bottom: 0;
+    
+}
+
+footer p {
+    font-weight: bold;
+    margin-left: 15px;
+    color: white;
+    text-align: left;    
+}
+
+footer section {
+    
+    margin:auto; 
+}
+
+
+/*la clase "imgFormato" define la forma de las imagenes de las paginas "lahistoriadeleo" y de "que es la historia"*/
+
+.imgFormato {
+
+    border-radius: 100%;
+    margin: 25px;
+    width: 350px;
+    height: 350px;
+}
+
+/*definición de clases para grid*/
+.headerGrid{
+    grid-area: header;
+}
+.navGrid{
+    grid-area: nav;
+}
+
+.textBienvenidaGrid{
+    grid-area: bienvenida;
+}
+
+.contentMainGrid{
+    grid-area: main;
+}
+
+.footerGrid{
+    grid-area: footer;
+}
+
+
+.wrapper {
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "bienvenida"
+    "main"
+    "footer"
+    ;
+
+}
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
